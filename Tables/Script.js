@@ -79,4 +79,4 @@ characterNames.forEach((element)=> console.log(element.toLowerCase()));
 
 const maches = [];
 
-characterNames.forEach((element)=>)
+characterNames.forEach((element )=>)
