@@ -77,6 +77,31 @@ characterNames.forEach((element)=> console.log(element.toLowerCase()));
  * -------------------------------------------------------
  */
 
-const maches = [];
 
-characterNames.forEach((element )=>)
+
+const elementsincludesA =characterNames.filter((element)=>(element.toLowerCase().includes("a")));
+/* Si le console.log avaity était intégré a la fonction filter 
+retourne directement la condition element.toLowerCase().includes("a") en booleen*/
+console.log(elementsincludesA);
+
+
+/**
+ * -------------------------------------------------------
+ * 9 - Créer une fonction `search(needle)` qui renvoie 
+ * les personnages dont le nom contient les lettres 
+ * passées en paramètre.
+ * 
+ * Ex : search('Amim') doit renvoyer 'Amimari'
+ * ------------------------------------------------------- 
+ */
+
+function search(needle){
+
+  let filterCharacterData = needle.toLowerCase();
+
+  const filterCharacter = characterNames.filter((element)=>(element.toLowerCase().includes(filterCharacterData)));
+  
+  console.log(filterCharacter);
+  
+}
+search("c");
