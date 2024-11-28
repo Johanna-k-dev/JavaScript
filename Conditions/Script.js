@@ -71,10 +71,11 @@ if (userAge <3) {
 const isBob30 = "Welcome";
 const isNotBob30 ="Go away";
 
-let userFirstName =prompt("","Tapez votre nom")
+let userFirstName =prompt("","Tapez votre nom");
+let ageOfBob = prompt("","Veuillez tapper votre age Bob");
 if (userFirstName === "Bob") {
 
-    let ageOfBob = prompt("","Veuillez tapper votre age Bob")
+    
 
     if(ageOfBob == 30){
 
@@ -84,6 +85,12 @@ if (userFirstName === "Bob") {
     }
 }else {
     console.log(isNotBob30)
+}
+
+if(userFirstName === "Bob" && ageOfBob == 30){
+    console.log(isBob30);  
+}else{
+    console.log(isNotBob30);
 }
 
 /**
