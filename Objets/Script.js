@@ -25,7 +25,7 @@ console.log(`he's name is ${billyTheCat.name} he's ${billyTheCat.color} cat he's
  * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
  * -------------------------------------------------------
  */
-
+/*
 function printColor() {
     const colorOfBilly = billyTheCat.color;
     const colorPrompt = prompt("quelle est la couleur de Billy","écrit color")
@@ -34,6 +34,7 @@ function printColor() {
     }
 }
 console.log(printColor());
+*/
 
 // Voici un tableau d'objets : interdit d'y toucher  :) 
 const animals = [
@@ -48,7 +49,9 @@ const animals = [
  * 3 - Afficher le dernier élément
  * -------------------------------------------------------
  */
-
+ 
+ 
+ 
 
 
 /**
