@@ -49,6 +49,9 @@ const animals = [
  * 3 - Afficher le dernier élément
  * -------------------------------------------------------
  */
+ const tableLength =animals.length -1;
+ console.log(tableLength); 
+ console.log(animals[3]);
  
  
  
@@ -60,13 +63,29 @@ const animals = [
  * -------------------------------------------------------
  */
 
-
+ 
+const theLastOfTable = animals.length -1 ;
+console.log(animals[theLastOfTable]);
 
 /**
  * -------------------------------------------------------
  * 4 - Supprimer le nom du 2ème animal et l'espèce du 3ème
  * -------------------------------------------------------
  */
+ 
+    const animal2Name = animals[1].name ;
+    console.log(animal2Name);
+    delete animals[1].name
+    console.log(animals[1]);
+    const animal3Species = animals[3].species;
+    console.log(animal3Species);
+    delete animals[3].species;
+    console.log(animals[3]);
+    
+    
+
+
+    
 
 
 /**
@@ -74,10 +93,16 @@ const animals = [
  * 5 - Remplacer le nom du premier animal par celui du 4ème (2 façons de faire)
  * -------------------------------------------------------
  */
+animals[0].name = animals[3].name;
+console.log(animals[1].name);
 
+animals[0].name= animals[3].name;
+console.log(animals[0].name);
+console.log(animals[3].name);
 
 
 // Voici un objet qui contient (entre autres) une fonction : interdit d'y toucher :) 
+
 const apple = {
     isEaten: false,
     eat: function () {
@@ -90,3 +115,5 @@ const apple = {
  * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
  * -------------------------------------------------------
  */
+console.log(apple.eat);
+
