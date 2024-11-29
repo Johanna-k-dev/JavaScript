@@ -58,8 +58,11 @@ console.log(characterNames.length);
  */
 
 
-characterNames.forEach((element,index)=> console.log(element , index));
+// Affiche l'index (error)
+characterNames.forEach((element,index)=> console.log(element,index));
 
+//afficher le nombre de charachteres 
+characterNames.forEach((element,index)=> console.log(element,element.length));
 
 
 /**
@@ -77,9 +80,8 @@ characterNames.forEach((element)=> console.log(element.toLowerCase()));
  * -------------------------------------------------------
  */
 
-
-
 const elementsincludesA =characterNames.filter((element)=>(element.toLowerCase().includes("a")));
+
 /* Si le console.log avaity était intégré a la fonction filter 
 retourne directement la condition element.toLowerCase().includes("a") en booleen*/
 console.log(elementsincludesA);
@@ -101,8 +103,8 @@ function search(needle){
 
   const filterCharacter = characterNames.filter((element)=>(element.toLowerCase().includes(filterCharacterData)));
   
-  console.log(filterCharacter);
+  return filterCharacter;
   
 }
-search("c");
+console.log (search("ca"));
 
