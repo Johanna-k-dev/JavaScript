@@ -15,7 +15,9 @@ const billyTheCat = {
  * 1 - Afficher les valeurs de chacunes des clés
  * -------------------------------------------------------
  */
-
+for (const key in billyTheCat) {
+  console.log(billyTheCat[key]);
+}
 console.log(`he's name is ${billyTheCat.name} he's ${billyTheCat.color} cat he's favorit food is ${billyTheCat.favouriteFoods} he is always hungry it's ${billyTheCat.isHungry} and he love say ${billyTheCat.meow}`);
 
 
@@ -25,7 +27,7 @@ console.log(`he's name is ${billyTheCat.name} he's ${billyTheCat.color} cat he's
  * 2 - Grâce à prompt(), afficher la valeur de la clé "color"
  * -------------------------------------------------------
  */
-/*
+
 function printColor() {
     const colorOfBilly = billyTheCat.color;
     const colorPrompt = prompt("quelle est la couleur de Billy","écrit color")
@@ -34,7 +36,7 @@ function printColor() {
     }
 }
 console.log(printColor());
-*/
+
 
 // Voici un tableau d'objets : interdit d'y toucher  :) 
 const animals = [
@@ -115,5 +117,6 @@ const apple = {
  * 6 - En manipulant l'objet, afficher "le fruit a déjà été mangé"
  * -------------------------------------------------------
  */
-console.log(apple.eat);
+const result =apple.eat();
+console.log(result);
 
