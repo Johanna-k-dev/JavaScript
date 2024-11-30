@@ -1,7 +1,2 @@
-# JavaScript
-Description:
-Dossier d'exercice sur le langage JS.
-Consignes:
-chaqun des exercices doit être effectué dans une branche différentegit branch
-
-
+Dans cette branche nous allons aborder le DOM Document Object Model.
+Cela nous permettera de dynamiser nos pages.
