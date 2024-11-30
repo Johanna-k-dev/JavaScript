@@ -11,8 +11,19 @@
    * etc...
    * -------------------------------------------------------
 */
+function runToursCounter() {
 
+    for (let i = 0; i <= 5; i++) {
+        const nbTours = i;
+        const consoleMessageTour = `Vous avez effectué ${nbTours} tour(s) de piste`
+        console.log(consoleMessageTour);
+            
+    }
+}
 
+// Appel de la fonction =>
+
+// runToursCounter()
 
  /**
    * -------------------------------------------------------
@@ -27,7 +38,33 @@
    * -------------------------------------------------------
 */
 
+function runToursCounterExo2() {
+    
+    const messageTours = ["Zé bartiii, c'est à conducteur 1️⃣ de démarrer","Il faut changer de conducteur, c'est à conducteur 2️⃣","Il faut changer de conducteur, c'est à conducteur 1️⃣","Il faut changer de conducteur, c'est à conducteur 2️⃣", "C'est fini, bien joué à tous, HIGH FIVE ! 🙌😎"]
+    console.log(messageTours.length);
+    
+    for (let i = 0; i <= 100; i++) {
+        
+        const nbToursExo2 = i;
 
+       if (nbToursExo2 === 1) {
+        console.log(messageTours[0]);
+       } else if (nbToursExo2 === 25) {
+        console.log(messageTours[1]);
+       }else if (nbToursExo2 === 50) {
+        console.log(messageTours[2]);
+       }
+       else if (nbToursExo2 === 75) {
+        console.log(messageTours[3]);
+       }else if (nbToursExo2 === 100) {
+        console.log(messageTours[4]);
+       };
+    }
+}
+
+ //Appel de la fonction
+
+// runToursCounterExo2()
 
  /**
    * -------------------------------------------------------
@@ -43,5 +80,39 @@
    * Une fois le carburant rechargé, afficher en warning : "Le refuel a été fait 🙌😎"
    * Une fois la course terminée, afficher le nombre total de refuel qui aura été nécéssaire. Ex : "Nombre total de refuel :  2"
    * Vous devez obtenir le résultat de la capture d'écran "boucles-basiques-resultat"
-   * -------------------------------------------------------
-*/
+   * -------------------------------------------------------*/
+
+
+
+function runToursCounterExo3() {
+    let refuelCounter = 0;
+    let fuelReserve = 74;
+
+    for (let i = 1; i <= 101; i++) { 
+        
+        fuelReserve-=7;
+        const nbToursCounter = i;
+        const messageToursExo3 = [`Tour N°${nbToursCounter}, Fuel restant ${fuelReserve}L`,`Attention ! il ne vous reste que ${fuelReserve}L de fuel restant! Carburant à recharger au prochain tour⛽️`,`Le refuel a été fait 🙌😎`,`Nombre total de refuel :${refuelCounter}`];
+        console.log(messageToursExo3[0]); 
+        
+        if (fuelReserve <= 11) {
+
+            //Ce qu'il se passe si la reserve de fuel est inferieur ou égale a 4
+           
+            console.warn(messageToursExo3[1]);  
+            fuelReserve+=70;
+            refuelCounter +=1; 
+            console.log(messageToursExo3[2]);
+            
+        }
+        
+        // ce qu'il se passe si la coursser est terminée
+          
+        else if (nbToursCounter ===101) {
+            console.log(`La course est terminée ! le nombre de refuel effectuer pendent la course s'éleve a ${refuelCounter}`);
+            
+        }
+    }
+}
+
+runToursCounterExo3()
